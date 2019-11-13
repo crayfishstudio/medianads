@@ -19,39 +19,7 @@
     <link rel="stylesheet" href="assets/styles/global.css">
 </head>
 
-<body class="body" id="body">
-    <!-- <header class="m__hide">
-        <nav>
-            <div id="menuToggle">
-                <div class="container-fluid px-body">
-                    <div class="row header no-gutters justify-content-between">
-                        <div class="col-2" style="z-index: 9000;">
-                            <img src="./assets/img/logo-navbar.svg">
-                        </div>
-                        <div class="col-8 align-self-center text-center d-none d-md-block">
-                            <a class="active-page" href="#">Главная</a>
-                            <a href="#">Главная</a>
-                            <a href="#">Главная</a>
-                            <a href="#">Главная</a>
-                        </div>
-                        <div class="col-2 align-self-center text-right d-none d-md-block">
-                            <div class="lang-switch">
-                                <button class="active-language">en</button>\<button>ru</button>
-                            </div>
-                        </div>
-                        <div id="menuToggleBtn">
-                            <input id="menuCheck" type="checkbox" onclick="toggleMenu()" />
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header> -->
-
+<body class="body" id="body" onresize="headerBg()">
     <header class="m__hide">
         <nav>
             <div id="menuToggle" class="menu-toggle">
@@ -130,7 +98,7 @@
             <a href="#" class="button-structure header__info-btn header__info-white">
                 Начать курс
             </a>
-            <a href="#" class="button-structure header__info-btn">
+            <a href="#" class="button-structure header__info-btn" >
                 Программа
             </a>
         </div>
@@ -166,14 +134,14 @@
                 <div class="header__counter-num">
                     1
                 </div>
-                <div class="header__counter-text">
+                <div class="header__counter-text" id="">
                     попытка сдать экзамен
                 </div>
             </div>
         </div>
     </div>
 
-    <svg class="svg__header d-none d-md-block" viewBox="0 0 1566 900">
+    <svg id="check-bg-desk" class="svg__header d-none d-md-block" viewBox="0 0 1566 900">
         <path fill="var(--main-transparent)"
             d="M1658.04 473.384C1575.82 693.972 1355.42 874.616 1076.04 795.384C795.68 715.873 850.35 603.848 363.541 490.384C144.68 439.372 -202.82 409.873 -314.82 530.873C-177.82 276.373 -516.492 119.918 -395.82 -22.6275L40.0414 -102.616L1674.86 -142.271L1658.04 473.384Z">
         </path>
@@ -185,16 +153,16 @@
         </path>
     </svg>
 
-    <svg class="svg__header svg-header-mob d-block d-md-none" viewBox="0 0 375 667">
+    <svg id="check-bg" class="svg__header svg-header-mob d-block d-md-none" viewBox="0 0 375 667">
         <path fill="var(--second)"
             d="m -326.46291,510.24999 c 136.862,59.404 238.936697,103.708 393.538497,103.708 97.108503,0 185.654503,-6.998 261.886503,-31.534 -46.131,-18.597 -74.789,-39.542 -105.416,-61.926 -53.807,-39.325 -113.694,-83.094 -285.082503,-126.385 -41.115997,-10.385 -104.518497,-20.933 -168.567497,-31.587 -141.513,-23.541 -286.179,-47.607 -200.585,-71.61 -274.383,76.943 -160.73,-141.975 -87.225,-238.321403 l 263.593,-55.6763498 602.094,-20.6158502 -20.873,-54.8294 -1196.903,137.0504 2.453,270.587603 c 256.947,57.812 414.012,125.984 541.087,181.139 z">
         </path>
-        <path fill="var(--main-transparent)"
+        <path  fill="var(--main-transparent)"
             d="M375 598.291C372.357 597.565 369.705 596.796 367.044 595.985C296.735 574.544 261.481 549.119 223.14 521.466C176.394 487.752 125.057 450.727 0 413.578V0H375V598.291Z">
         </path>
     </svg>
     <div class="default-container">
-        <img src="assets/img/header/course-bg.svg" class="header__background">
+        <div id="header-bg-img" style="background-image: url('assets/img/header/course-bg.svg')"></div>
     </div>
 
 

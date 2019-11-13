@@ -227,19 +227,45 @@ $(document).ready(function () {
 	});
 
 
-
+	headerBg()
 
 
 });
+
+function headerBg() {
+	if (window.innerWidth <= 767) {
+		var top = $('#check-bg').offset().top;
+		var height = $('#check-bg').height();
+
+		var crayfish = top + height - 170;
+
+		$('#header-bg-img').css({
+			'height': crayfish + 'px'
+		});
+		console.log('IF: top: ', top, " | height: ", height, " | crayfish: ", crayfish)
+	} else {
+		var top = $('#check-bg-desk').offset().top;
+		var height = $('#check-bg-desk').height();
+		var crayfish = top + height;
+		console.log('ELSE: top: ', top, " | height: ", height, " | crayfish: ", crayfish)
+
+		$('#header-bg-img').css({
+			'height': crayfish + 'px'
+		});
+	}
+
+
+
+
+
+
+}
+
 
 function toggleMenu() {
 	var container = document.getElementById("mobile__container");
 	var checkBox = document.getElementById("menuCheck");
 	var pageBody = document.getElementById("body");
-	console.log('*********************************************************')
-	console.log('*********************************************************')
-	console.log('*********************************************************')
-	console.log('*********************************************************')
 
 	if (checkBox.checked == true) {
 		// menu.style.display = "flex";
