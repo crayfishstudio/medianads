@@ -1,0 +1,12 @@
+:root{
+    /* colors */
+    --main: #475993;
+    /* --main: red; */
+    --main-transparent: rgba(52, 71, 130, .8);
+    --second: #8C9FDB;
+    /* --second: green; */
+    --white: #FAFAFA;
+    --grey: #c4c4c4;
+    --background: rgb(248, 248, 248);
+
+}
