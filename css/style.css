@@ -46,6 +46,12 @@
     }
 }
 
+@media (min-width: 1399.99px) {
+    .pt-10 {
+        padding-top: 0px !important;
+    }
+}
+
 @media (max-width: 1399.98px) {
     .px-body {
         padding: 0 5vw !important;
@@ -69,6 +75,11 @@
         padding-top: 10vh !important;
     }
 
+
+    .info {
+        padding-top: 150px !important;
+    }
+
     .mb-15 {
         margin-bottom: 15vh !important;
     }
@@ -82,7 +93,7 @@
     }
 
     .training {
-        margin-top: 15vh !important;
+        margin-top: 10vh !important;
         margin-bottom: 5vh !important;
     }
 
@@ -187,10 +198,27 @@
     .blog-news__item-w {
         margin-bottom: 3vh !important;
     }
-}
 
-@media (min-width: 991.99px) {
+    .overflow {
+        padding-top: 80px !important;
+    }
 
+    .ipad-hide {
+        display: none !important;
+    }
+
+    .school-title {
+        font-size: 42px !important;
+        line-height: 56px !important;
+    }
+
+    .pb-25 {
+        padding-bottom: 5vh !important;
+    }
+
+    .closed-course {
+        margin-top: 8vh !important;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -342,6 +370,13 @@
         top: -5% !important;
     }
 
+    .open-course__circle {
+        height: 137px !important;
+        width: 137px !important;
+        right: -10% !important;
+        top: -5% !important;
+    }
+
     .training-bg {
         padding-left: 12 !important;
         padding-right: 12 !important;
@@ -377,11 +412,15 @@
         top: 17px !important;
     }
 
+    .dots-animation__closed {
+        top: 17px !important;
+    }
+
     .agency-bg-circle {
         height: 137px !important;
         width: 137px !important;
         top: -100% !important;
-        left: -20%;
+        left: -10%;
     }
 
     .agency h2 {
@@ -515,11 +554,60 @@
     .px-body {
         padding: 0 20px !important;
     }
+
+    .agency-bg-circle {
+        height: 137px !important;
+        width: 137px !important;
+        top: -100% !important;
+        left: -20%;
+    }
+
+    .open-course h2 {
+        font-size: 30px !important;
+    }
+
+    .open-course__circle {
+        right: -26% !important;
+    }
+
+    .school-card p {
+        font-size: 14px !important;
+        line-height: 26px !important;
+    }
+
+    .school-card__image div {
+        width: 100% !important;
+    }
+
+    .school-card a {
+        font-size: 16px !important;
+    }
+
+    .button-icon {
+        top: 30% !important;
+    }
+
+    .school-card {
+        margin-bottom: 2vh !important;
+    }
+
+    h1.school-title {
+        font-size: 28px !important;
+        line-height: 46px !important;
+    }
+
+    .school {
+        height: 100vh !important;
+    }
 }
 
 @media (max-width:375.99px) {
     .mt-mob {
         margin-top: 0rem !important;
+    }
+
+    .school {
+        height: 100vh !important;
     }
 }
 
@@ -538,6 +626,15 @@
 
     .search-bar__mobile button {
         right: 15px !important;
+    }
+
+    .school-card a {
+        font-size: 14px !important;
+    }
+
+    h1.school-title {
+        font-size: 24px !important;
+        line-height: 36px !important;
     }
 }
 
@@ -569,7 +666,6 @@ html {
     font-family: 'Gilroy', sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 .px-body {
@@ -636,6 +732,8 @@ button.active-language {
     padding-top: 20.3vh;
 }
 
+
+
 .info h1,
 .blog-page h1 {
     font-weight: 700;
@@ -678,7 +776,6 @@ button.active-language {
     transition: .4s all;
     border: 1px solid #FAFAFA;
 }
-
 
 .mt-15 {
     margin-top: 20.3vh;
@@ -822,7 +919,7 @@ button.active-language {
 
 .dots-animation__agency {
     right: 0px;
-    top: 22px;
+    top: 21px;
 }
 
 .mb-15 {
@@ -958,7 +1055,7 @@ button.active-language {
 }
 
 .dots-animation__training {
-    top: 2.5%;
+    top: 10.5%;
 }
 
 .training-mt {
@@ -1209,7 +1306,6 @@ button.active-language {
     width: 100%;
 }
 
-
 .blog-mobile__bg {
     height: 52vh;
     background-image: url(.././img/team-image.png);
@@ -1246,8 +1342,6 @@ button.active-language {
     line-height: 22px;
     color: #2C2C2C;
 }
-
-
 
 .change {
     background-color: #fafafa !important;
@@ -1408,8 +1502,6 @@ a.navbar-links-change {
     margin-bottom: 7.6vh;
     margin-right: 2%;
 }
-
-
 
 [data-pagination],
 [data-pagination] *,
@@ -1608,8 +1700,6 @@ a.sidebar-links__active {
     margin-top: 20px;
 }
 
-
-
 .card-body {
     background: #fafafa;
 }
@@ -1747,3 +1837,173 @@ a.sidebar-links__active {
     height: 73vh;
 }
 
+.overflow {
+    overflow: hidden;
+    padding-top: 63px;
+}
+
+.open-course h2 {
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 54px;
+    position: relative;
+    z-index: 11;
+    margin-bottom: 0;
+    color: #2C2C2C;
+}
+
+.pb-25 {
+    padding-bottom: 16.5vh;
+}
+
+.open-course__circle {
+    right: -68px;
+}
+
+
+
+.school-card a {
+    background: #475993;
+    box-shadow: 0px 4px 10px rgba(44, 44, 44, 0.12);
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    padding: 12px 0;
+    color: #FAFAFA;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.school-main__image {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.course-left .school-card:hover .school-main__image {
+    transform: rotate(-80deg) translateX(-160px);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.course-right .school-card:hover .school-main__image {
+    transform: rotate(80deg) translateX(160px);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.school-card:hover a {
+    opacity: 1;
+}
+
+.school-card:hover school-card__image {
+    transform-origin: rotate(-80deg) translateX(-160px);
+    opacity: 0;
+}
+
+
+.school-card__image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.button-icon {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+
+.school-card__image div {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+
+.school-card p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #2C2C2C;
+    margin-bottom: 0;
+}
+
+.school-card {
+    margin-bottom: 4vh;
+}
+
+.closed-course__circle {
+    left: -68px;
+}
+
+.closed-course {
+    margin-top: 17.5vh;
+}
+
+.dots-animation__closed {
+    right: 0px;
+    top: 19px;
+}
+
+.pt-10 {
+    padding-top: 61px;
+}
+.stages {
+    margin-top: 14vh;
+    background-image: url(.././img/agency/stages-bg-desktop.svg);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.stages h3{
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 54px;
+    margin-bottom: 10vh;
+    color: #2C2C2C;
+}
+
+
+
+.stages-card p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    color: #2C2C2C;
+}
+
+.stages-card {
+    margin-bottom: 10vh;
+}
+
+.stages-flex {
+    justify-content: space-evenly;
+}
+
+.stages-card__width {
+    width: 26%;
+}
+
+.breef h2{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    position: relative;
+    z-index: 11;
+    color: #2C2C2C;
+}
+
+.breef-circle {
+    left: -9%;
+    top: -110%;
+}
