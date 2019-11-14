@@ -48,6 +48,10 @@ a:hover {
     background-color: #fafafa !important;
 }
 
+.change-menu{
+    background: #585858 !important;
+}
+
 a.navbar-links-change {
     color: #2c2c2c !important;
 }
@@ -1672,7 +1676,7 @@ svg.lessons-card__line-icon {
 
 .range {
     position: relative;
-    width: 370px;
+    width: 300px;
     height: 3px;
 }
 
@@ -1763,15 +1767,13 @@ svg.lessons-card__line-icon {
 .range-labels li {
     position: relative;
     float: left;
-    width: 90.25px;
+    width: 70px;
     text-align: center;
     color: #b2b2b2;
     font-size: 14px;
     cursor: pointer;
     font-weight: 600;
 }
-
-.range-labels li:nth-child(1) {}
 
 .range-labels li::before {
     position: absolute;
@@ -1788,19 +1790,19 @@ svg.lessons-card__line-icon {
 
 
 .range-labels li:nth-child(1)::before {
-    left: 9px;
+    left: -2px;
 }
 
 .range-labels li:nth-child(2)::before {
-    left: 3px;
+    left: -2px;
 }
 
 .range-labels li:nth-child(4)::before {
-    left: -3px;
+    left: 0px;
 }
 
 .range-labels li:nth-child(5)::before {
-    left: -9px;
+    left: 2px;
 }
 
 
@@ -2567,7 +2569,16 @@ svg.lessons-card__line-icon {
     }
 }
 
+
 @media only screen and (max-width: 767px) {
+    .accordion__container{
+        padding-top: 0;
+    }
+
+    .atestat__wrapper{
+        margin-top: 80px;
+    }
+
     .accordion-svg__right {
         height: 500px;
         top: 0px;
@@ -3047,6 +3058,15 @@ svg.lessons-card__line-icon {
 }
 
 @media only screen and (max-width: 575px) {
+    #menuToggleBtn{
+        right: 18px;
+    }
+    .support__svg{
+        height: 250px;
+        top: auto;
+        bottom: 400px;
+    }
+
     .result__text{
         font-weight: 300;
     }
@@ -3080,10 +3100,6 @@ svg.lessons-card__line-icon {
 
     .review__container{
         padding-bottom: 110px;
-    }
-    .support__svg{
-        height: 500px;
-        top: 230px;
     }
 
     .support__range{
@@ -3266,11 +3282,6 @@ svg.lessons-card__line-icon {
         margin-bottom: 120px;
     }
 
-    .support__svg{
-        height: 250px;
-        top: auto;
-        bottom: 400px;
-    }
 
     .support__title{
         font-size: 26px;

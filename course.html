@@ -24,60 +24,58 @@
     <header class="m__hide">
         <nav>
             <div id="menuToggle" class="menu-toggle">
-                <div class="container-fluid">
-                    <div class="default-wrapper header justify-content-between">
-                        <div class="col-2" style="z-index: 9000;">
-                            <img id="navbar-logo" src="assets/img/logo-navbar.svg">
+                <div class="default-wrapper header justify-content-between">
+                    <div class="col-2" style="z-index: 9000;">
+                        <img id="navbar-logo" src="assets/img/logo-navbar.svg">
+                    </div>
+                    <div class="col-6 align-self-center text-center d-none d-md-block">
+                        <a class="navbar-links active-page" href="#">Главная</a>
+                        <a class="navbar-links" href="#">Главная</a>
+                        <a class="navbar-links" href="#">Главная</a>
+                        <a class="navbar-links" href="#">Главная</a>
+                    </div>
+                    <div class="col-8 col-md-2 pr-5 pr-sm-0 mr-md-0 login-btn-container">
+                        <a href="#" class="button-structure login-btn">Вход</a>
+                    </div>
+                    <div class="col-2 align-self-center text-right d-none d-md-block">
+                        <div class="lang-switch">
+                            <button class="active-language">en</button>\<button>ru</button>
                         </div>
-                        <div class="col-6 align-self-center text-center d-none d-md-block">
-                            <a class="navbar-links active-page" href="#">Главная</a>
-                            <a class="navbar-links" href="#">Главная</a>
-                            <a class="navbar-links" href="#">Главная</a>
-                            <a class="navbar-links" href="#">Главная</a>
-                        </div>
-                        <div class="col-8 col-md-2 pr-5 pr-sm-0 mr-md-0 login-btn-container">
-                            <a href="#" class="button-structure login-btn">Вход</a>
-                        </div>
-                        <div class="col-2 align-self-center text-right d-none d-md-block">
-                            <div class="lang-switch">
-                                <button class="active-language">en</button>\<button>ru</button>
+                    </div>
+                    <div id="menuToggleBtn">
+                        <input id="menuCheck" type="checkbox" onclick="toggleMenu()" />
+                        <div class="menuBtnItem"></div>
+                        <div class="menuBtnItem"></div>
+                        <div class="menuBtnItem"></div>
+                    </div>
+                    <div class="mobile__container" id="mobile__container">
+                        <ul class="list menu__main_mob">
+                            <li class="menu__item_mob"><a class="link menu__link_mob" href="#">Главная</a>
+                            </li>
+                            <li class="menu__item_mob"><a class="link menu__link_mob" href="#">Главная</a></li>
+                            <li class="menu__item_mob"><a class="link menu__link_mob" href="#">Главная</a></li>
+                            <li class="menu__item_mob"><a class="link menu__link_mob" href="#">Главная</a></li>
+                        </ul>
+                        <div class="social_mob">
+                            <div class="social__title">
+                                Сообщить об проблеме
                             </div>
-                        </div>
-                        <div id="menuToggleBtn">
-                            <input id="menuCheck" type="checkbox" onclick="toggleMenu()" />
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="mobile__container" id="mobile__container">
-                            <ul class="list menu__main_mob">
-                                <li class="menu__item_mob"><a class="link menu__link_mob" href="#">Главная</a>
-                                </li>
-                                <li class="menu__item_mob"><a class="link menu__link_mob" href="#">Главная</a></li>
-                                <li class="menu__item_mob"><a class="link menu__link_mob" href="#">Главная</a></li>
-                                <li class="menu__item_mob"><a class="link menu__link_mob" href="#">Главная</a></li>
-                            </ul>
-                            <div class="social_mob">
-                                <div class="social__title">
-                                    Сообщить об проблеме
-                                </div>
-                                <div class="social__text">
+                            <div class="social__text">
 
-                                </div>
-                                <div class="social__icons_mob">
-                                    <a href="#">
-                                        <img src="assets/img/icons/mob-fb.svg" alt="fb">
-                                    </a>
-                                    <a href="#">
-                                        <img src="assets/img/icons/mob-msg.svg" alt="msg">
-                                    </a>
-                                    <a href="#">
-                                        <img src="assets/img/icons/mob-tg.svg" alt="tg">
-                                    </a>
-                                    <a href="#">
-                                        <img src="assets/img/icons/mob-in.svg" alt="in">
-                                    </a>
-                                </div>
+                            </div>
+                            <div class="social__icons_mob">
+                                <a href="#">
+                                    <img src="assets/img/icons/mob-fb.svg" alt="fb">
+                                </a>
+                                <a href="#">
+                                    <img src="assets/img/icons/mob-msg.svg" alt="msg">
+                                </a>
+                                <a href="#">
+                                    <img src="assets/img/icons/mob-tg.svg" alt="tg">
+                                </a>
+                                <a href="#">
+                                    <img src="assets/img/icons/mob-in.svg" alt="in">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -196,7 +194,7 @@
                 style="background-image: url('assets/img/Mokin.svg');"></div>
             <a href="#" class="teacher-photo__social-link ">
                 <img class="teacher-photo__social wow bounceInRight" src="assets/img/icons/facebook-teacher.svg"
-                    alt="fb" data-wow-duration=".3s" data-wow-delay="2s">
+                    alt="fb" data-wow-duration=".5s" data-wow-delay="1.7s">
             </a>
             <div class="teacher-photo__svg-container">
                 <svg class="teacher-photo__svg wow slideInRight" data-wow-duration=".8s" viewBox="0 0 627 1090">
@@ -335,19 +333,19 @@
             </svg>
         </div>
         <div class="dots-animation dots-animation__video">
-            <div class="wow bounceInRight" data-wow-duration="1s"></div>
-            <div class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="0.1s"></div>
-            <div class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="0.2s"></div>
-            <div class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="0.3s"></div>
-            <div class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="0.4s"></div>
-            <div class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="0.5s"></div>
-            <div class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="0.6s"></div>
-            <div class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="0.7s"></div>
-            <div class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="0.8s"></div>
-            <div class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="0.9s"></div>
-            <div class="wow bounceInRight ipad-hide" data-wow-duration="1s" data-wow-delay="1s"></div>
-            <div class="wow bounceInRight ipad-hide" data-wow-duration="1s" data-wow-delay="1.1s"></div>
-            <div class="wow bounceInRight ipad-hide" data-wow-duration="1s" data-wow-delay="1.2s"></div>
+            <div class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="2s"></div>
+            <div class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="2.1s"></div>
+            <div class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="2.2s"></div>
+            <div class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="2.3s"></div>
+            <div class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="2.4s"></div>
+            <div class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="2.5s"></div>
+            <div class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="2.6s"></div>
+            <div class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="2.7s"></div>
+            <div class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="2.8s"></div>
+            <div class="wow bounceInRight" data-wow-duration="1s" data-wow-delay="2.9s"></div>
+            <div class="wow bounceInRight ipad-hide" data-wow-duration="1s" data-wow-delay="3s"></div>
+            <div class="wow bounceInRight ipad-hide" data-wow-duration="1s" data-wow-delay="3.1s"></div>
+            <div class="wow bounceInRight ipad-hide" data-wow-duration="1s" data-wow-delay="3.2s"></div>
         </div>
     </div>
     <div class="gallery__container">
@@ -381,11 +379,11 @@
                 Освойте Digital - профессию, входящую в топ 10 самых востребованных в Росии!
             </div>
             <svg class="steps-svg" viewBox="0 0 1058 296">
-                <circle fill="var(--grey)" cx="4" cy="290" r="4"> </circle>
-                <circle fill="var(--grey)" cx="12" cy="262" r="4"> </circle>
-                <circle fill="var(--grey)" cx="26" cy="232" r="4"> </circle>
-                <circle fill="var(--grey)" cx="46" cy="206" r="4"> </circle>
-                <circle fill="var(--grey)" cx="73" cy="189" r="4"> </circle>
+                <circle class="wow fadeInLeft" fill="var(--grey)" cx="4" cy="290" r="4"> </circle>
+                <circle class="wow fadeInLeft" fill="var(--grey)" cx="12" cy="262" r="4"> </circle>
+                <circle class="wow fadeInLeft" fill="var(--grey)" cx="26" cy="232" r="4"> </circle>
+                <circle class="wow fadeInLeft" fill="var(--grey)" cx="46" cy="206" r="4"> </circle>
+                <circle class="wow fadeInLeft" fill="var(--grey)" cx="73" cy="189" r="4"> </circle>
 
                 <circle fill="var(--grey)" cx="104" cy="178" r="4"> </circle>
                 <circle fill="var(--grey)" cx="137" cy="174" r="4"> </circle>
@@ -1841,29 +1839,30 @@
                 </div>
             </div>
             <div class="atestat__right">
-                <div class="big-title atestat__title atestat-desk wow fadeInRight" data-wow-duration=".4s" data-wow-delay=".3s">
+                <div class="big-title atestat__title atestat-desk wow fadeInRight" data-wow-duration=".5s"
+                    data-wow-delay=".3s">
                     Постоянные аттестации будущего специалиста по рекламе в Facebook
                 </div>
-                <div class="atestat__text atestat-desk wow fadeInRight" data-wow-duration=".4s" data-wow-delay=".7s">
+                <div class="atestat__text atestat-desk wow fadeInRight" data-wow-duration=".5s" data-wow-delay=".7s">
                     Согласно продуктивности изучения программы и результата финального экзамена, вы получите сертификат
                     соответствующего уровня.
                     За продуктивное прохождения и финальный экзамен максимально возможно получить по 500 баллов.
                 </div>
                 <div class="atestat__ol">
-                    <div class="atestat__li wow fadeInRight" data-wow-duration=".4s" data-wow-delay="1.3s">
+                    <div class="atestat__li wow fadeInRight" data-wow-duration=".5s" data-wow-delay="1.3s">
                         <div class="accordion__num">1</div>
                         <span>Прослушал: 400-650 баллов</span>
                     </div>
-                    <div class="atestat__li wow fadeInRight" data-wow-duration=".4s" data-wow-delay="1.6s">
+                    <div class="atestat__li wow fadeInRight" data-wow-duration=".5s" data-wow-delay="1.6s">
                         <div class="accordion__num">2</div>
                         <span>Успешно окончил: 651-850 баллов</span>
                     </div>
-                    <div class="atestat__li wow fadeInRight" data-wow-duration=".4s" data-wow-delay="1.9s">
+                    <div class="atestat__li wow fadeInRight" data-wow-duration=".5s" data-wow-delay="1.9s">
                         <div class="accordion__num">3</div>
                         <span>С отличием: 851 балл и выше</span>
                     </div>
                 </div>
-                <div class="atestat__btn wow fadeInRight" data-wow-duration=".4s" data-wow-delay="2.2s">
+                <div class="atestat__btn wow fadeInRight" data-wow-duration=".5s" data-wow-delay="2.2s">
                     <a href="#" class="button-structure btn-main">Получить сертификат</a>
                 </div>
             </div>
@@ -2146,11 +2145,11 @@
         </svg>
         <div class="default-container support__container">
             <div class="default-wrapper support__wrapper">
-                <div class="support__left"> 
-                    <div class="support__title wow fadeInLeft" data-wow-duration=".4s" data-wow-delay=".3s">
+                <div class="support__left">
+                    <div class="support__title wow fadeInLeft" data-wow-duration=".5s" data-wow-delay=".3s">
                         Персональная поддержка преподователя по вашим потребностям
                     </div>
-                    <div class="support__text wow fadeInLeft" data-wow-duration=".4s" data-wow-delay=".6s">
+                    <div class="support__text wow fadeInLeft" data-wow-duration=".5s" data-wow-delay=".6s">
                         Если вам необходима персональная помощь Евгения Мокина, вы можете приобрести необходимое
                         количество
                         его часов.

@@ -135,7 +135,7 @@ window.onload = function () {
 	var getTrackStyle = function (el) {
 		var curVal = el.value,
 			// val = (curVal - 1) * 25,
-			val = (curVal - 1) * 24.666666667,
+			val = (curVal - 1) * 23.666666667,
 			style = '';
 
 		// Set active label
@@ -179,6 +179,7 @@ $(document).ready(function () {
 			$(".navbar-links").addClass("navbar-links-change");
 			$(".lang-switch").addClass("lang-switch-change");
 			$(".login-btn").addClass("login-btn_black");
+			$(".menuBtnItem").addClass("change-menu");
 			$("#navbar-logo").attr("src", "assets/img/logo-navbar-black.svg");
 
 		} else {
@@ -186,6 +187,7 @@ $(document).ready(function () {
 			$(".navbar-links").removeClass("navbar-links-change");
 			$(".lang-switch").removeClass("lang-switch-change");
 			$(".login-btn").removeClass("login-btn_black");
+			$(".menuBtnItem").removeClass("change-menu");
 			$("#navbar-logo").attr("src", "assets/img/logo-navbar.svg");
 		}
 	});
