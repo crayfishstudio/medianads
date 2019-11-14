@@ -2568,6 +2568,19 @@ svg.lessons-card__line-icon {
 }
 
 @media only screen and (max-width: 767px) {
+    .accordion-svg__right {
+        height: 500px;
+        top: 0px;
+        right: -70px;
+    }
+
+    .accordion-svg__left {
+        height: 320px;
+        top: 410px;
+        left: -20px;
+        z-index: -500;
+    }
+    
     .video__btn-container{
         display: flex;
         justify-content: center;
