@@ -253,13 +253,8 @@ function headerBg() {
 			'height': crayfish + 'px'
 		});
 	}
-
-
-
-
-
-
 }
+
 
 
 function toggleMenu() {

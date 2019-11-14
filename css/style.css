@@ -1884,13 +1884,13 @@ a.sidebar-links__active {
     transition: all 0.5s ease-in-out;
 }
 
-.course-left .school-card:hover .school-main__image {
+.course-left {
     transform: rotate(-80deg) translateX(-160px);
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
 
-.course-right .school-card:hover .school-main__image {
+.course-right {
     transform: rotate(80deg) translateX(160px);
     opacity: 0;
     transition: all 0.5s ease-in-out;
