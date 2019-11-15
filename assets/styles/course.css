@@ -61,6 +61,29 @@ a.navbar-links-change {
     color: #2c2c2c !important;
 }
 
+.fixed__container {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 50;
+}
+
+.fixed__item {
+    opacity: .4;
+    margin: 10px 0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.fixed__get-up {
+    padding: 2px;
+}
+
+.fixed__item:hover {
+    opacity: .8;
+}
+
 .big-title {
     font-weight: bold;
     font-size: 54px;
@@ -1961,9 +1984,23 @@ svg.lessons-card__line-icon {
 }
 
 
+.lesson-toggle{
+    display: none;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
 
+.lesson-toggle__item{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 38px;
+    color: #787878;
+}
 
-
+.lesson-toggle__item.active{
+    color: var(--main);
+    border-bottom: 2px solid var(--main);
+}
 
 
 
@@ -2224,6 +2261,14 @@ svg.lessons-card__line-icon {
 
 
 @media only screen and (max-width: 991px) {
+    .lesson-toggle{
+        display: flex;
+    }
+
+    #lesson2{
+        display: none;
+    }
+
     .circle-svg{
         width: 120px;
         height: 120px;
@@ -3058,6 +3103,9 @@ svg.lessons-card__line-icon {
 }
 
 @media only screen and (max-width: 575px) {
+    .lesson-toggle__item{
+        font-size: 14px;
+    }
     .container-slider .ui-card.prev, .container-slider .ui-card.next{
         transform: scale(1.1) translateY(10px) translateX(0px);
     }

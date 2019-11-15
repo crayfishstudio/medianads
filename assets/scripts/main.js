@@ -274,3 +274,19 @@ function toggleMenu() {
 		pageBody.classList.remove("block-scroll");
 	}
 }
+
+function getLesson1(){
+	$(".lesson-toggle__item1").addClass("active");
+	$("#lesson1").css("display", "flex");
+
+	$(".lesson-toggle__item2").removeClass("active");
+	$("#lesson2").css("display", "none");
+}
+
+function getLesson2(){
+	$(".lesson-toggle__item2").addClass("active");
+	$("#lesson2").css("display", "flex");
+
+	$(".lesson-toggle__item1").removeClass("active");
+	$("#lesson1").css("display", "none");
+}

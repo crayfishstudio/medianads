@@ -21,7 +21,7 @@
 </head>
 
 <body class="body" id="body" onresize="headerBg()">
-    <header class="m__hide">
+    <header class="m__hide" id="header">
         <nav>
             <div id="menuToggle" class="menu-toggle">
                 <div class="default-wrapper header justify-content-between">
@@ -204,6 +204,12 @@
                 </svg>
             </div>
         </div>
+    </div>
+
+    <div class="fixed__container">
+        <a href="#header" class="fixed__item fixed__get-up">
+            <img src="./img/scroll-to-top.svg" alt="^">
+        </a>
     </div>
 
     <div class="default-wrapper">
@@ -1891,7 +1897,15 @@
 
     <div class="default-wrapper lessons__container">
         <div class="lessons__cards">
-            <div class="lessons-card">
+            <div class="lesson-toggle">
+                <div class="lesson-toggle__item lesson-toggle__item1 active" onclick="getLesson1()">
+                    Персональный
+                </div>
+                <div class="lesson-toggle__item lesson-toggle__item2" onclick="getLesson2()">
+                    Практический
+                </div>
+            </div>
+            <div class="lessons-card" id="lesson1">
                 <div class="lessons-card__main">
                     <div class="lessons-card__title">
                         Персональный
@@ -1942,10 +1956,10 @@
                     <a href="#" class="button-structure btn-main">Приступить</a>
                 </div>
             </div>
-            <div class="lessons-card">
+            <div class="lessons-card" id="lesson2">
                 <div class="lessons-card__main">
                     <div class="lessons-card__title">
-                        Персональный
+                        Практический
                     </div>
                     <div class="lessons-card__price">
                         699$
