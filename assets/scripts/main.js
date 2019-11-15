@@ -16,7 +16,7 @@ jQuery(document).ready(function ($) {
 
 window.onload = function () {
 
-	
+
 	// gallery modal 
 	var modal = document.querySelector(".gallery__container");
 	var trigger = document.querySelector(".video__circle");
@@ -252,8 +252,6 @@ function headerBg() {
 	}
 }
 
-
-
 function toggleMenu() {
 	var container = document.getElementById("mobile__container");
 	var checkBox = document.getElementById("menuCheck");
@@ -269,7 +267,7 @@ function toggleMenu() {
 }
 
 //toggle for lesson-block in course.html 
-function getLesson1(){
+function getLesson1() {
 	$(".lesson-toggle__item1").addClass("active");
 	$("#lesson1").css("display", "flex");
 
@@ -277,10 +275,33 @@ function getLesson1(){
 	$("#lesson2").css("display", "none");
 }
 
-function getLesson2(){
+function getLesson2() {
 	$(".lesson-toggle__item2").addClass("active");
 	$("#lesson2").css("display", "flex");
 
 	$(".lesson-toggle__item1").removeClass("active");
 	$("#lesson1").css("display", "none");
 }
+
+var waypoint = new Waypoint({
+	element: document.getElementById('step-svg'),
+	handler: function (direction) {
+		myLoop();
+		console.log('WOWOWOWOW')
+	},
+	offset: '75%'
+})
+
+var svg = $(".steps-svg").children();
+var i = 0;                     
+function myLoop () {           
+   setTimeout(function () {    
+	svg[i].setAttribute("fill", "var(--grey)");         
+      i++;                     
+      if (i < svg.length) {           
+         myLoop();             
+      }                      
+   }, 50)
+}
+
+                    
