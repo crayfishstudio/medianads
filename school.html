@@ -233,7 +233,7 @@
                             <p>Реклама в Facebook &amp; Instagram 2.0. PRO</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-6 text-center school-hover">
+                    <div class="col-lg-3 col-md-4 col-6 text-center school-hover" id="school">
                         <div class="school-card">
                             <div class="school-card__image">
                                 <div class="school-card__wrp">
@@ -297,6 +297,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
     <script src="./js/main.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="js/wow.min.js"></script>
@@ -320,34 +321,30 @@
             var rect = el.target.getBoundingClientRect();
             var x = el.clientX - rect.left;
             var width = $(this).width();
-            var middle = width/2;
+            var middle = width / 2;
             // console.log('x: ', x, 'width: ', width, 'middle: ', middle);
-            
-            if(x<=middle){
-                $(this).find(".school-card").find(".school-card__image").find(".school-card__wrp").find(".school-main__image").addClass("course-right");
 
-            } else{
-                $(this).find(".school-card").find(".school-card__image").find(".school-card__wrp").find(".school-main__image").addClass("course-left");
+            if (x <= middle) {
+                $(this).find(".school-card").find(".school-card__image").find(".school-card__wrp").find(
+                    ".school-main__image").addClass("course-right");
+
+            } else {
+                $(this).find(".school-card").find(".school-card__image").find(".school-card__wrp").find(
+                    ".school-main__image").addClass("course-left");
             }
-        }).mouseleave(function(el){
-            $(this).find(".school-card").find(".school-card__image").find(".school-card__wrp").find(".school-main__image").removeClass("course-left").removeClass("course-right")
+
+        }).mouseleave(function (el) {
+            $(this).find(".school-card").find(".school-card__image").find(".school-card__wrp").find(
+                ".school-main__image").removeClass("course-left").removeClass("course-right")
         })
 
+        $(document).click(function (event) {
 
-        function getPosition(e) {
-            var rect = e.target.getBoundingClientRect();
-            var x = e.clientX - rect.left;
-            var y = e.clientY - rect.top;
-            return {
-                x,
-                y
+            if (!$(event.target).closest(".school-hover").length) {
+                $("body").find(".school-main__image").removeClass("course-left").removeClass("course-right");
             }
-        }
+        });
 
-        // function printPosition(e) {
-        //     var position = getPosition(e);
-        //     document.getElementById('area').value = 'X: ' + position.x + ' Y: ' + position.y;
-        // }
     </script>
 
 
