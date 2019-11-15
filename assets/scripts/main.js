@@ -274,3 +274,5 @@ function toggleMenu() {
 		pageBody.classList.remove("block-scroll");
 	}
 }
+
+// $(".steps-svg").children().css('fill', red)
