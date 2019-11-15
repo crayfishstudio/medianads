@@ -1,20 +1,22 @@
+jQuery(document).ready(function ($) {
+	$('.header__counter-num').counterUp({
+		delay: 20,
+		time: 800
+	});
+});
+
+
+jQuery(document).ready(function ($) {
+	$('.info-counter__num').counterUp({
+		delay: 20,
+		time: 800
+	});
+});
+
+
 window.onload = function () {
 
-	jQuery(document).ready(function ($) {
-		$('.header__counter-num').counterUp({
-			delay: 20,
-			time: 800
-		});
-	});
-
-
-	jQuery(document).ready(function ($) {
-		$('.info-counter__num').counterUp({
-			delay: 20,
-			time: 800
-		});
-	});
-
+	
 	// gallery modal 
 	var modal = document.querySelector(".gallery__container");
 	var trigger = document.querySelector(".video__circle");

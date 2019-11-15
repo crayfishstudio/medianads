@@ -1995,6 +1995,7 @@ svg.lessons-card__line-icon {
     font-size: 18px;
     line-height: 38px;
     color: #787878;
+    cursor: pointer;
 }
 
 .lesson-toggle__item.active{
@@ -2002,8 +2003,24 @@ svg.lessons-card__line-icon {
     border-bottom: 2px solid var(--main);
 }
 
+.steps-slider .slick-dots li.slick-active button:before{
+    color: var(--main);
+    font-size: 74px;
+}
 
+.steps-slider .slick-dots li button:before{
+    font-size: 74px;
+}
 
+.steps-slider .slick-dots li button{
+    font-size: 14px;
+    color: white;
+    line-height: 22px;
+}
+
+.steps-slider .slick-dots{
+    margin-top: 20px;
+}
 
 @media only screen and (max-width: 1950px) {
     .header__info {
