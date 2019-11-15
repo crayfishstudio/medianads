@@ -3157,7 +3157,7 @@ svg.lessons-card__line-icon {
     }
 
     .support__range{
-        transform: scale(0.8);
+        transform: scale(1);
     }
     .result__text{
         font-size: 18px;
@@ -3189,6 +3189,7 @@ svg.lessons-card__line-icon {
 
     .accordion__list::before {
         left: -15px;
+        top: 5px;
     }
 
     .accordion__icons {
@@ -3328,6 +3329,16 @@ svg.lessons-card__line-icon {
 }
 
 @media only screen and (max-width: 479px) {
+    .client-container .left-arrow img, .client-container .right-arrow img{
+        width: 20px;
+    }
+    .login-btn-container{
+        padding-left: 0;
+    
+    }
+    .header a{
+        margin: 0;
+    }
     .review__svg{
         height: 470px;
     }
@@ -3388,7 +3399,7 @@ svg.lessons-card__line-icon {
         font-size: 12px
     }
     .support__range{
-        transform: scale(0.6);
+        transform: scale(1);
     }
 }
 

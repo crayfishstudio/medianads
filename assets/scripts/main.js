@@ -81,9 +81,6 @@ window.onload = function () {
 
 	$('.ui-card').click(function () {
 		$slide = $('.active').width();
-		console.log($('.active').position().left);
-
-		console.log('width: ', $('.active').width());
 
 		if ($(this).hasClass('next')) {
 			$('.container-slider').stop(false, true).animate({
@@ -192,12 +189,10 @@ $(document).ready(function () {
 		}
 	});
 
-
 	$(".owl-carousel").owlCarousel({
 		// center: true,
 		items: 4,
 		loop: false,
-		// margin: 10,
 		startPosition: 5,
 		autoWidth: true,
 		responsive: {
@@ -239,17 +234,15 @@ function headerBg() {
 		var top = $('#check-bg').offset().top;
 		var height = $('#check-bg').height();
 
-		var crayfish = top + height - 170;
+		var crayfish = top + height;
 
 		$('#header-bg-img').css({
 			'height': crayfish + 'px'
 		});
-		console.log('IF: top: ', top, " | height: ", height, " | crayfish: ", crayfish)
 	} else {
 		var top = $('#check-bg-desk').offset().top;
 		var height = $('#check-bg-desk').height();
 		var crayfish = top + height;
-		console.log('ELSE: top: ', top, " | height: ", height, " | crayfish: ", crayfish)
 
 		$('#header-bg-img').css({
 			'height': crayfish + 'px'
@@ -265,16 +258,15 @@ function toggleMenu() {
 	var pageBody = document.getElementById("body");
 
 	if (checkBox.checked == true) {
-		// menu.style.display = "flex";
 		container.style.left = "0";
 		pageBody.classList.add("block-scroll");
 	} else {
-		// menu.style.display = "none";
 		container.style.left = "100%";
 		pageBody.classList.remove("block-scroll");
 	}
 }
 
+//toggle for lesson-block in course.html 
 function getLesson1(){
 	$(".lesson-toggle__item1").addClass("active");
 	$("#lesson1").css("display", "flex");

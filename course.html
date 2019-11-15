@@ -25,7 +25,7 @@
         <nav>
             <div id="menuToggle" class="menu-toggle">
                 <div class="default-wrapper header justify-content-between">
-                    <div class="col-2" style="z-index: 9000;">
+                    <div class="col" style="z-index: 9000;">
                         <img id="navbar-logo" src="assets/img/logo-navbar.svg">
                     </div>
                     <div class="col-6 align-self-center text-center d-none d-md-block">
@@ -34,10 +34,10 @@
                         <a class="navbar-links" href="#">Главная</a>
                         <a class="navbar-links" href="#">Главная</a>
                     </div>
-                    <div class="col-8 col-md-2 pr-5 pr-sm-0 mr-md-0 login-btn-container">
+                    <div class="col-6 col-md-2 pr-5 pr-sm-0 mr-md-0 login-btn-container">
                         <a href="#" class="button-structure login-btn">Вход</a>
                     </div>
-                    <div class="col-2 align-self-center text-right d-none d-md-block">
+                    <div class="col- align-self-center text-right d-none d-md-block">
                         <div class="lang-switch">
                             <button class="active-language">en</button>\<button>ru</button>
                         </div>
@@ -159,6 +159,7 @@
         <path fill="var(--main-transparent)"
             d="M375 598.291C372.357 597.565 369.705 596.796 367.044 595.985C296.735 574.544 261.481 549.119 223.14 521.466C176.394 487.752 125.057 450.727 0 413.578V0H375V598.291Z">
         </path>
+        <path fill="var(--background)" d="M 5.0203252e-8,609.10237 C 22.2666,611.22337 45.5093,612.34237 70.0786,612.34237 c 95.9244,0 183.4944,-6.828 259.0934,-30.645 11.451,4.632 23.977,9.118 37.872,13.445 2.661,0.828 5.313,1.614 7.956,2.355 v 70.252 H 5.0203252e-8 Z"></path>
     </svg>
     <div class="default-container">
         <div id="header-bg-img" style="background-image: url('assets/img/header/course-bg.svg')"></div>
@@ -277,13 +278,15 @@
         </div>
     </div>
 
-    <div class="container-fluid px-lg-3 px-0">
+    <div class="default-container client-container px-lg-3 px-0">
         <div class="big-title title-client-slider">
             Клиенты преподователя
         </div>
         <div class="row no-gutters">
             <div class="col-1 align-self-center text-right">
-                <div class="left-arrow"><img src="./assets/img/icons/arrow-left.svg"></div>
+                <div class="left-arrow">
+                    <img src="./assets/img/icons/arrow-left.svg">
+                </div>
             </div>
             <div class="col-10">
                 <div class="row no-gutters image-center justify-content-center slider">
@@ -300,7 +303,8 @@
                 </div>
             </div>
             <div class="col-1 align-self-center text-left">
-                <div class="right-arrow"><img src="./assets/img/icons/arrow-right.svg">
+                <div class="right-arrow">
+                    <img src="./assets/img/icons/arrow-right.svg">
                 </div>
             </div>
         </div>
