@@ -15,4 +15,3 @@
                 $('.sidebar__mobile').toggleClass('active-sidebar');
             });
         });
-

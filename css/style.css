@@ -57,6 +57,10 @@
         padding: 0 5vw !important;
     }
 
+    .pl-breef {
+        padding-left: 5vw !important;
+    }
+
     .mt-15 {
         margin-top: 25.3vh !important;
     }
@@ -75,6 +79,22 @@
         padding-top: 10vh !important;
     }
 
+    .breef {
+        background-image: none !important;
+    }
+
+    .individual-text {
+        font-size: 40px !important;
+        line-height: 40px !important;
+    }
+
+    .individual-circle {
+        right: -14% !important;
+    }
+
+    .pb-10 {
+        padding-bottom: 0 !important;
+    }
 
     .info {
         padding-top: 150px !important;
@@ -99,7 +119,7 @@
 
     .info p,
     .blog-page p {
-        margin-bottom: 7vh !important;
+        margin-bottom: 8vh !important;
     }
 
     .training-mt {
@@ -111,7 +131,7 @@
     }
 
     .mt-15 {
-        margin-top: 12vh !important;
+        margin-top: 7vh !important;
     }
 
     .training-padding {
@@ -219,6 +239,41 @@
     .closed-course {
         margin-top: 8vh !important;
     }
+
+    h1.agency-title {
+        font-size: 42px !important;
+        line-height: 60px !important;
+    }
+
+    .stages {
+        margin-top: 8vh !important;
+        background-image: none !important;
+    }
+
+    .breef-bg {
+        height: 50vh !important;
+    }
+
+    .mb-15 {
+        margin-bottom: 7vh !important;
+    }
+
+    .breef-circle {
+        top: -140% !important;
+        left: -20% !important
+    }
+
+    .breef h2 {
+        font-size: 30px !important;
+        line-height: 48px !important;
+    }
+
+    .school-card p {
+        font-size: 20px !important;
+        line-height: 24px !important;
+    }
+
+
 }
 
 @media (max-width: 991.98px) {
@@ -237,6 +292,10 @@
     }
 
     .px-body {
+        padding: 0 3vw !important;
+    }
+
+    .pl-breef {
         padding: 0 3vw !important;
     }
 
@@ -521,6 +580,19 @@
     .news-subtext {
         font-size: 24px !important;
     }
+
+    .mt-25 {
+        margin-top: 15vh !important;
+    }
+
+
+
+    .individual-text {
+        font-size: 30px !important;
+        line-height: 38px !important;
+        text-align: center !important;
+        right: 0 !important;
+    }
 }
 
 @media (max-width:768.99px) {
@@ -541,6 +613,10 @@
         margin-bottom: 17vh !important;
     }
 
+    .px-body {
+        padding: 0 20px !important;
+    }
+
     .info,
     .blog-page {
         background-image: url(.././img/info-bg-mob.svg) !important;
@@ -551,8 +627,36 @@
         margin-top: 2rem !important;
     }
 
-    .px-body {
+    .mt-15 {
+        margin-top: 7vh !important;
+    }
+
+    .pb-10 {
+        padding-bottom: 0 !important;
+    }
+
+    .mt-25 {
+        margin-top: 15vh !important;
+    }
+
+    .pl-breef {
         padding: 0 20px !important;
+    }
+
+    .footer-nav {
+        margin-bottom: 20px;
+    }
+
+    .individual-text {
+        font-size: 24px !important;
+        line-height: 38px !important;
+        text-align: center !important;
+        right: 0 !important;
+    }
+
+    .individual-card {
+        border: 8px dotted #C4C4C4;
+        padding: 40px 30px !important;
     }
 
     .agency-bg-circle {
@@ -560,6 +664,10 @@
         width: 137px !important;
         top: -100% !important;
         left: -20%;
+    }
+
+    .circle-breef {
+        left: -23% !important;
     }
 
     .open-course h2 {
@@ -598,6 +706,59 @@
 
     .school {
         height: 100vh !important;
+    }
+
+    .stages-card__width {
+        width: 50% !important;
+        padding: 0 10px;
+    }
+
+    h2.breef-circle-text {
+        font-size: 24px !important;
+    }
+
+    .stages h3 {
+        font-size: 24px !important;
+        line-height: 29px !important;
+        margin-bottom: 7vh !important;
+    }
+
+    .stages {
+        margin-top: 7vh !important;
+        background-image: none !important;
+    }
+
+    .stages-card {
+        margin-bottom: 5vh !important;
+    }
+
+    .breef-title {
+        font-size: 24px !important;
+        line-height: 42px !important;
+        margin-bottom: 20px !important;
+        text-align: center;
+    }
+
+    .breef-bg {
+        height: 35vh !important;
+    }
+
+    .breef-text {
+        margin-top: 20px;
+        font-size: 14px !important;
+        line-height: 26px !important;
+        color: #2C2C2C !important;
+        margin-bottom: 5vh !important;
+    }
+
+    .breef-button {
+        font-size: 16px !important;
+        line-height: 19px !important;
+    }
+
+    .breef {
+        background-image: url(.././img/agency/breef-bg-mobile.svg) !important;
+        background-position: 100% 29% !important;
     }
 }
 
@@ -670,6 +831,10 @@ html {
 
 .px-body {
     padding: 0 10vw;
+}
+
+.pl-breef {
+    padding-left: 10vw;
 }
 
 #menuToggle {
@@ -1453,6 +1618,12 @@ a.navbar-links-change {
     padding: 16px 0;
     display: block;
     text-align: center;
+    transition: .4s all;
+}
+
+.subscribe-bar a:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 16px rgba(44, 44, 44, 0.3);
 }
 
 .subscribe-bar__content {
@@ -1474,6 +1645,7 @@ a.navbar-links-change {
     font-size: 36px;
     line-height: 44px;
     color: #2C2C2C;
+    margin-bottom: 4vh;
 }
 
 .blog-category h4 {
@@ -1860,8 +2032,6 @@ a.sidebar-links__active {
     right: -68px;
 }
 
-
-
 .school-card a {
     background: #475993;
     box-shadow: 0px 4px 10px rgba(44, 44, 44, 0.12);
@@ -1955,6 +2125,7 @@ a.sidebar-links__active {
 .pt-10 {
     padding-top: 61px;
 }
+
 .stages {
     margin-top: 14vh;
     background-image: url(.././img/agency/stages-bg-desktop.svg);
@@ -1963,7 +2134,7 @@ a.sidebar-links__active {
     background-size: contain;
 }
 
-.stages h3{
+.stages h3 {
     font-weight: bold;
     font-size: 54px;
     line-height: 54px;
@@ -1971,9 +2142,7 @@ a.sidebar-links__active {
     color: #2C2C2C;
 }
 
-
-
-.stages-card p{
+.stages-card p {
     font-weight: 500;
     font-size: 18px;
     line-height: 32px;
@@ -1994,16 +2163,226 @@ a.sidebar-links__active {
     width: 26%;
 }
 
-.breef h2{
+.breef h2 {
     font-weight: bold;
     font-size: 36px;
     line-height: 54px;
     position: relative;
     z-index: 11;
     color: #2C2C2C;
+    margin-bottom: 0;
 }
 
 .breef-circle {
-    left: -9%;
+    left: -3.5vw;
     top: -110%;
+}
+
+.agency-button {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FAFAFA;
+    display: block;
+    background: #6D5FFF;
+    box-shadow: 0px 4px 10px rgba(44, 44, 44, 0.12);
+    border-radius: 30px;
+    text-align: center;
+    padding: 16px 0;
+    transition: .4s all;
+}
+
+.agency-button__white {
+    color: #2C2C2C;
+    background: transparent;
+    border: 1px solid #2C2C2C;
+    padding: 15px 0;
+}
+
+.agency-button:hover {
+    color: #fafafa;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 16px rgba(44, 44, 44, 0.3);
+}
+
+.agency-button__white:hover {
+    color: #2C2C2C;
+}
+
+.breef {
+    background-image: url(.././img/agency/breef-bg-desktop.svg);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+}
+
+.agency_header__button {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.breef-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #2C2C2C;
+    margin-bottom: 5vh;
+}
+
+.breef-button {
+    background: #6D5FFF;
+    box-shadow: 0px 4px 10px rgba(44, 44, 44, 0.12);
+    border-radius: 30px;
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 16px 0;
+    color: #FAFAFA;
+    transition: .4s all;
+}
+
+.breef-button:hover {
+    color: #fafafa;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 16px rgba(44, 44, 44, 0.3);
+}
+
+.breef-title {
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 60px;
+    margin-bottom: 5.07vh;
+    color: #2C2C2C;
+}
+
+.breef-bg {
+    height: 81vh;
+    background-position: right;
+    background-size: cover;
+    background: #C4C4C4;
+    background-repeat: no-repeat;
+}
+
+.pb-10 {
+    padding-bottom: 15vh;
+}
+
+.dots-animation__breef {
+    top: 80%;
+}
+
+h2.breef-circle-text {
+    font-size: 54px;
+}
+
+.mt-25 {
+    margin-top: 25vh;
+}
+
+.circle-breef {
+    left: -50px;
+}
+
+
+
+
+
+
+
+
+
+
+.individual-text {
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 54px;
+    text-align: right;
+    z-index: 11;
+    position: relative;
+    color: #2C2C2C;
+    right: -2.5vw;
+}
+
+.individual-circle {
+    right: -6.5vw;
+}
+
+.individual-card {
+    border: 8px dotted #C4C4C4;
+    padding: 2.5vw 2.1875vw 2.1875vw 2.1875vw;
+}
+
+.individual-card h5 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #2C2C2C;
+    margin-bottom: 20px;
+}
+
+.individual-card p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.individual-card button {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    padding: 16px 28px;
+    margin: 0 auto;
+    display: block;
+    background: transparent;
+    border: 1px solid #2C2C2C;
+    box-shadow: 0px 4px 10px rgba(44, 44, 44, 0.12);
+    border-radius: 30px;
+    color: #2C2C2C;
+    transition: .4s all;
+}
+
+.individual-card button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 16px rgba(44, 44, 44, 0.3);
+}
+
+.breef-mobile__buttons {
+    background: #6D5FFF;
+    border-radius: 20px;
+}
+
+.breef-mobile__buttons p {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 20px 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: #FAFAFA;
+}
+
+.breef-mobile__buttons a {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    background: #FAFAFA;
+    border-radius: 30px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+    margin-bottom: 20px;
+    color: #2C2C2C;
+}
+
+a.mobile__buttons-bottom {
+    color: #FAFAFA;
+    background-color: transparent;
+    border: 1px solid #FAFAFA;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 15px 0;
 }
