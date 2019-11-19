@@ -68,9 +68,18 @@
     .news-item__image {
         height: 50vh !important;
     }
+
+    .banner-place {
+        margin-top: 4vh !important;
+        height: 40vh !important;
+    }
 }
 
 @media (max-width: 1024.98px) {
+
+    .banner-place {
+        height: 30vh !important;
+    }
 
     .info,
     .blog-page {
@@ -2385,4 +2394,13 @@ a.mobile__buttons-bottom {
     box-sizing: border-box;
     border-radius: 30px;
     padding: 15px 0;
+}
+
+.banner-place {
+    margin-top: 7vh;
+    height: 65vh;
+    background: #C4C4C4;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
